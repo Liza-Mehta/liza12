@@ -1,0 +1,59 @@
+.my-order {
+    margin: 50px 0px;
+}
+
+.my-orders .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.my-orders-order {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr; /* Corrected 2rf to 2fr */
+    align-items: center;
+    gap: 30px; /* Corrected from 30x to 30px */
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #454545;
+    border: 2px solid rgb(226, 222, 221);
+    border-radius: 5px;
+}
+
+.my-orders-order img {
+    width: 50px;
+}
+
+.my-orders-order p span {
+    color: tomato;
+}
+
+.my-orders-order p b {
+    font-weight: 500;
+    color: #454545;
+}
+
+.my-orders-order button {
+    border: 2px solid black;
+    display: inline-block; /* Ensures the button only takes up space around its content */
+    text-align: center;
+    padding: 12px 20px; /* Adjust padding to create space around the text */
+    border-radius: 4px;
+    cursor: pointer;
+    color: #454545;
+    background-color: rgb(246, 226, 223);
+    /* Optional: set a max-width to prevent button from stretching */
+    max-width: 200px; /* Adjust as necessary */
+}
+
+@media (max-width: 900px) {
+    .my-orders-order {
+        grid-template-columns: 1fr 2fr 1fr; /* Keep this as is for smaller screens */
+        row-gap: 5px;
+        font-size: 12px;
+    }
+    .my-orders-order button { /* Corrected 'botton' to 'button' */
+        font-size: 10px; /* Adjusted font size for the button */
+    }
+}
